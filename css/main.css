@@ -1,0 +1,1058 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*============ GENERAL (GLOBAL) CSS STYLES ============*/
+
+html {
+    font-size: 16px;
+  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  
+}
+
+ul,ol {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    color: #d9dbe5;  
+  
+} 
+
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+  
+}
+
+h1 {
+    font-family: 'poppins', sans-serif;
+    font-size: 2em;
+    color: #e2e3ed;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #e2e3ed;
+    font-size: 2.45em;
+  
+}
+
+h3,h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #e2e3ed;
+    
+}
+
+h3 {
+    font-size: 2em;
+    
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    color: #e2e3ed;
+    font-size: 1.2em;
+  
+}
+
+img {
+    width: 100%;
+}  
+
+figure {
+    margin: 0;
+  
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+/*------ BASE HEADER & FOOTER STYLES -- because they stay the same for every page ------*/
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #1a2c2a;
+}
+
+/*------ Header CSS ------*/
+
+header {
+    padding: 15px 0;
+    
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.header-divider {
+    width: 100%;
+    margin: 10px 0;
+    background: #d9dbe5;
+    height: 1px;
+  
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+}
+
+header nav figure a {
+    padding-top: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+
+/*============ Mobile Styles - Homepage ============*/
+
+/*------ Main CSS ------*/
+
+.main-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #333;
+    background-image: url(../img/jake-melara-30679-unsplash11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    min-height: 500px;
+} 
+
+.content-wrapper h1{
+    margin: 10px 0 250px 0;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 25px;
+    background-color: #527158;
+    
+}
+
+/*------- FORM <INPUT> ELEMENTS: THE INPUT FIELD (E-MAIL) & SUBMIT BUTTON (D/L ITINERARY) ------*/
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', helvetica, Arial, sans-serif; 
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/****** controls the lower half of the main section that has font awesome icons + icon descriptions******/
+
+.main-bottom {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0;
+    background-color: #333;
+    background: url(../img/rawpixel-800820-unsplash3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-bottom h2 {
+    padding: 12px 0;
+    margin-top: 0;
+}
+
+.main-bottom .main-bot-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.main-bottom article {
+    width: 55%;
+    margin: 10px;
+  
+}
+
+.main-bottom p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-bottom i {
+    padding-top: 50px;
+    font-size: 3.75em;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    background-color: #2a423a;
+    
+}
+
+.reviews .content-wrapper figure {
+    background-image: url(./img/omar-lopez-296944-unsplash2.jpg);
+    background-repeat: no-re
+    background-position: center;
+    background-size: cover;
+}
+
+.reviews h3 {
+    width: 100%;
+    padding: 20px 0 0 0;
+    
+}
+
+
+.reviews p {
+    padding: 25px 0 40px 0;
+    
+}
+
+
+/*------Footer------*/
+
+
+footer .content-wrapper {
+    width: 70%;
+    margin: 30px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.contact h4 {
+    margin: 20px 0;
+    font-style: normal;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.social h4 {
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+    font-size: xx-large;
+    
+}
+
+.social-icons a{
+    color: #76957b;
+}
+
+.copyright {
+    margin-bottom: 8px;
+  
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+}
+
+
+/*============ MOBILE STYLES- ABOUT PAGE BELOW ============*/
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #527158;
+    
+}
+
+
+.mission-content {
+    padding: 0;
+}
+
+#mission-p2 {
+    padding-top: 30px
+}
+
+.map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 52px 0;
+    background-color: #2a423a;
+}
+
+
+
+/*============ MOBILE STYLES - FAQ PAGE BELOW ============*/
+
+.faq h2 {
+    font-size: 2.3em;
+}
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-flow: row wrap;
+    background-color: #527158;
+    
+}
+
+.faq .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 45px; 
+}
+
+.faq-content {
+    padding: 47px 0;
+}
+
+.faq-content h4 {
+    padding-bottom: 14px;
+  
+}
+
+
+/*============ END OF ALL MOBILE STYLES ============*/
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+------ MEDIA QUERES FOR ------ TABLET STYLES & DESKTOP STYLES------
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+  /*============ TABLET STYLES BELOW ============*/
+  
+  
+  .content-wrapper {
+    max-width: 640px;
+    margin: 50px 0;
+  }
+
+/*------ HEADER ------*/
+  
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  header .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  header figure {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  
+  header nav {
+    width: 25.3125%;
+  }
+  
+  header nav a {
+      padding-right: 30px;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .header-divider {
+    display: none;
+  }
+  
+/*------ FOOTER ------*/
+
+  footer .content-wrapper {
+      width:100%;
+      margin: 100px 0;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  
+  footer .contact {
+      margin-bottom: 0;
+  }
+  
+   .social-icons a {
+    padding: 0px 30px;
+  }
+  
+  .social h4 {
+    margin: 20px 0px;
+  }
+  
+  
+  footer .copyright {
+      width: 40%;
+  }
+  
+/*============ TABLET STYLES - HOMEPAGE BELOW ============*/
+  
+/*------ MAIN SECTION-TOP ------*/
+  h1 {
+      font-size: 2.5em;
+  }
+  
+/*------ ASIDE ------*/
+  
+  aside .content-wrapper {
+      margin: 50px 0;
+      display: flex; 
+      justify-content: space-between;
+      flex-flow: row wrap;
+  }
+  
+  aside .content-wrapper .form-info, aside .content-wrapper .the-form {
+      width: 45%;
+      margin: 0;
+  }
+  
+  
+/*------ MAIN SECTION-BOTTOM ------*/
+  
+  .main-bottom h2{
+      font-size: 2.25em;  
+  }
+  
+  .main-bottom article { 
+      display: flex;
+      justify-content: space-around;
+      flex-flow: column wrap;
+      flex-basis: 44%; 
+  }
+  
+  /* specific to tablet & deskop. All Font Awesome icons on site have default padding of 50. It's too much for wifi icon once flexflow and flex basis is applied.*/
+  .main-bottom .main-bot-icon .fa-wifi {
+      padding-top: 25px;
+  }
+  
+  .main-bottom .-icon-description {
+      width: 30%;
+  }
+  
+  .main-bottom i {
+      margin-bottom: 30px;
+  }
+  
+/*------ REVIEWS ------*/
+   
+  .reviews article {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%
+  }
+  
+   .reviews h3 {
+      margin: 0;
+      width: 90%;
+      padding: 0;  
+  }
+  
+  .reviews article div{
+      width: 100%; 
+      margin-left: 25px;
+  }
+  
+  .reviews p {
+      padding: 0;
+      font-size: 1.125em;
+  }
+  
+  .reviews figure {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+
+
+
+/*============ TABLET STYLES - ABOUT PAGE BELOW ============*/
+  
+  .mission .content-wrapper {
+      max-width: 690px;
+  } 
+  .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+  }
+  
+  .mission-content p {
+      width: 90%;
+  }
+
+  #mission-p1 {
+      margin-right: 50px;
+      
+  }
+  
+  #mission-p2 {
+      margin-left: 20px;
+      padding: 0px;
+    
+  }
+  .contact-section .content-wrapper h2 {
+      width: 100%; 
+  } 
+
+  .contact-info {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .map {
+      padding-bottom: 0;
+      
+  }
+
+/*============ TABLET STYLES - FAQ PAGE BELOW ============*/
+
+  .faq .content-wrapper {
+      justify-content: space-between;
+  }
+  
+  .faq-content{ 
+      flex-basis: 40%;
+
+  }
+  
+  .faq-content h4 {
+    text-align: center;
+  }
+
+  .faq h2 {
+      width: 100%;
+  
+  }
+  
+}
+
+
+@media only screen and (min-width: 1200px) {
+ 
+  
+/*============ DESKTOP STYLES BELOW ============*/
+  
+  .container {
+      max-width: 960px;
+  }
+  
+  
+/*------ HEADER ------*/
+  
+  header figure {
+      width: 23.583%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+  
+  
+/*------ Footer ------*/
+  
+  .footer-content {
+    width: 95%;
+    justify-content: space-between; 
+  }
+  
+  .social-icons a {
+    padding: 0px 30px;
+  }
+  
+  .social h4 {
+    margin: 20px 0px;
+  }
+/*============ DESKTOP STYLES - HOMEPAGE BELOW ============*/
+  
+  h2 {
+      font-size: 2.25em;
+  }
+  
+  h3, h4 {
+      font-size: 1.875em;
+  }
+  
+  p {
+      font-size: 1.125em;
+      line-height: 1.33em;
+  }
+  
+  .content-wrapper {
+      max-width: 960px;
+  }
+/*------ MAIN SECTION-TOP ------*/
+  
+  
+  .main-top h1 {
+      width: 75%;
+      font-size: 3.75em;
+      margin-top: 0px;
+      margin-bottom: 50%; 
+  }
+  
+/*------ ASIDE ------*/
+ 
+  aside .content-wrapper {
+      justify-content: space-between;
+      
+  }
+  
+  aside .content-wrapper .form-info, aside .content-wrapper .the-form {
+      width: 33.33%;
+  }
+  
+/*------ MAIN SECTION-BOTTOM ------*/
+  
+  .main-bottom h2 {
+      width: 70%;
+  }
+  
+
+  .main-bottom article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 30%;  
+  }
+  
+  .main-bottom .icon-description {
+      width: 100%;
+  }
+  
+/* specific to tablet & deskop. All Font Awesome icons on site have default padding of 50. It's too much for wifi icon once flexflow and flex basis is applied.*/
+  .main-bottom .main-bot-icon .fa-wifi {
+      padding-top: 25px;
+  }
+  
+/*------ REVIEWS ------*/
+  
+  .reviews article div {
+      width: 50%;
+      margin-left: 50px;
+  }
+  
+  .reviews article p {
+      margin-top: 10px;
+      padding: 0px;
+  }
+  
+  .reviews h2 {
+      margin-top: 0px;
+  }
+  .reviews figure {
+      width: 38.333%;
+      margin-top: 6%;
+  }  
+  
+  .reviews h3 {
+      margin-top: 30px; 
+      width: 75%;
+      margin-bottom: 0px;
+  }
+  
+
+/*============ DESKTOP STYLES - ABOUT PAGE BELOW ============*/
+  
+/*------ MAIN SECTION ------*/
+  
+  .mission .content-wrapper {
+    max-width: 1000px;
+  } 
+  
+  .mission h2, .contact-section h2  {
+      width: 91.66%;
+  }
+  
+  .contact-section .content-wrapper h2 {
+      margin-bottom: 36px;
+  } 
+  
+  .map {
+      padding-bottom: 0%;
+  }
+  
+  
+/*============ DESKTOP STYLES - FAQ PAGE BELOW ============*/
+  
+/*------ MAIN SECTION ------*/
+  .faq .content-wrapper {
+      justify-content: space-between;
+  }
+  .faq h2 {
+      width: 100%;
+      font-size: 3em;
+  }
+  
+  .faq-content h4 {
+    text-align:left;
+  }
+  
+  .faq-content {
+      flex-basis: 45%;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-flow: row wrap;      
+  }
+  
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
